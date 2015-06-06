@@ -45,7 +45,7 @@ Mira la carpeta `map` de este repo, allí está el código boilerplate para que 
 
 [Uno de los mejores ejemplos](https://github.com/alignedleft/d3-book/blob/master/chapter_12/05_choropleth.html) si quieres ir más allá está en el libro de Scott Murray, donde aprenderás a hacer coropletas de una manera muy sencilla. Allí está el verdadero poder de los datos.
 
-Puedes ver el resultado en mi [bl.ocks](). Aquí otro mapa de [coropletas](http://bl.ocks.org/martgnz/1b7ba8ebd60a1567e855). Aquí otro de [burbujas](http://bl.ocks.org/martgnz/75c7e4f9f7ad15532e18).
+Puedes ver el resultado en mi [bl.ocks](http://bl.ocks.org/martgnz/9602b285e51a6100521a). Aquí otro mapa de [coropletas](http://bl.ocks.org/martgnz/1b7ba8ebd60a1567e855). Aquí otro de [burbujas](http://bl.ocks.org/martgnz/75c7e4f9f7ad15532e18).
 
 ## Recursos
 - [D3 Wiki](https://github.com/mbostock/d3/wiki) y la [galería](https://github.com/mbostock/d3/wiki/Gallery)
