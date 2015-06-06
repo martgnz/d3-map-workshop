@@ -1,0 +1,10 @@
+h1 {
+    font-size: 40px;
+}
+.intro {
+    color: green;
+}
+#grafico {
+    height: auto;
+    width: 200px
+}
