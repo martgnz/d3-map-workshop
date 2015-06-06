@@ -1,26 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- declarar el encoding utf-8 es muy importante si trabajamos con D3 -->
     <meta charset="utf-8">
-    <title>Chúpate esa Tufte</title>
-    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <title>Mi primer mapa con D3</title>
     <link rel="stylesheet" href="style.css">
+    <script src="d3.min.js"></script>
+    <script src="topojson.v1.min.js"></script>
 </head>
 <body>
-    <h1>El mejor mapa</h1>
-    <p class="intro">No hay ninguno más chulo</p>
+    <h1>Mi primer mapa con D3</h1>
     <div id="mapa"></div>
 
     <script>
-    var margin = {top: 20, right: 10, bottom: 20, left: 10};
+    // margin convention: http://bl.ocks.org/mbostock/3019563
+    var margin = {top: 260, right: 10, bottom: 20, left: 150};
     var width = 960 - margin.left - margin.right,
-        height = 500 - margin.top - margin.bottom;
+        height = 1060 - margin.top - margin.bottom;
 
+    // llamamos a la proyección (mercator) y centramos el mapa en catalunya junto con la escala
+    var projection = d3.geo.mercator()
+        .center([2.172200, 41.395691])
+        .scale(300000)
+
+    // generamos el path con d3.geo y le asignamos la proyección
+    var path = d3.geo.path()
+        .projection(projection);
+
+    // añadimos el mapa al div con id mapa y le aplicamos el margen
     var svg = d3.select("#mapa").append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
       .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        // aquí está la salsa. Llamamos a nuestro topojson y lo mostramos
+        d3.json("seccio-censal_topo.json", function(error, m) {
+            if (error) return console.error(error);
+
+        svg.append("path")
+            .datum(topojson.mesh(m))
+            .attr("d", path)
+        });
     </script>
 </body>
 </html>
