@@ -19,7 +19,7 @@ Lo mismo que en mac pero con `apt-get`, `pacman` o lo que sea que uses. Ya sabes
 ### Windows
 Lo siento, [Windows es complicado](https://www.youtube.com/watch?v=dQw4w9WgXcQ).
 
-Broma, puedes instalar QGIS [desde la web oficial](qgis.org/en/site/) y node. Tienes que [instalar node](http://blog.teamtreehouse.com/install-node-js-npm-windows) e ir a la línea de comandos (`cmd`) para instalar de la misma manera `node` y `http-server`(aunque puedes usar el servidor python igualmente).
+Broma, puedes instalar QGIS [desde la web oficial](qgis.org/en/site/). Tienes que [instalar node](http://blog.teamtreehouse.com/install-node-js-npm-windows) e ir a la línea de comandos (`cmd`) para instalar de la misma manera que en mac (`npm`) `topojson` y `http-server`(aunque puedes usar el servidor python igualmente).
 
 ## Shapefiles
 Los datos geográficos suelen venir en formato shapefile (SHP), que no es nada más que unos cuantos archivos con extensión rara y un encoding del siglo pasado. Busca por portales de institutos cartográficos (si eres periodista debes usar siempre fuentes oficiales).
